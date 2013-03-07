@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  != page.html
+  .well
+   if (links.domain && Object.keys( links.domain ).length !== 0) 
+    h1 Domains and URL's
+    h2 Domain Volumes
+    p
+      | Top domains by volume.
+    p
+      a.btn.btn-primary(href='data/domain_volume.csv') Download
+    br
+   if (links.url && Object.keys( links.url ).length !== 0)  
+    h2 URL Volume
+    p
+      | Top URL's by volume. This data includes the full extracted URL, the title of that page, and the volume count.
+    p
+      a.btn.btn-primary(href='data/url_volume.csv') Download

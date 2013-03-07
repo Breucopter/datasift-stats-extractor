@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  != page.html
+  .well
+    h1 Salience
+    if (salience.topics && Object.keys( salience.topics ).length !== 0) 
+      h2 Salience Topics
+      p
+        | Salience Topics are a high level topics extracted from the content. This data shows all topics extracted from the sample data ordered by volume. The Salience engine currently supports 40 topics in total that can be reviewed
+        a(href='http://dev.datasift.com/docs/getting-started/data/salience-topics-info', target='_blank') here
+        | .
+      p
+        a.btn.btn-primary(href='data/salience_topics.csv') Download
+      br
+    if (salience.locations && Object.keys( salience.locations ).length !== 0)
+    h2 Salience Entity Locations
+    p
+      | Locations extracted from entities whose type is set to "Place". This data is useful to identify what places are being discussed. Note that this does not indicate the location of where the content originated, but highlights any locations that were discussed as part of the interaction content.
+    p
+      a.btn.btn-primary(href='data/salience_entity_locations.csv') Download

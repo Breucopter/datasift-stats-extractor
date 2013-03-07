@@ -1,0 +1,10 @@
+{
+    "title": ""
+  , "description": ""
+  , "share_csdl_link": ""
+  , "amazon_s3": {
+	    "accessKeyId" : "",
+	    "secretAccessKey": "",
+	    "file_delete_policy_days" : 21
+  }
+}

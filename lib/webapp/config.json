@@ -1,0 +1,7 @@
+{
+  "template": "index.jade",
+  "meta": {
+    "ben": 123,
+    "peta": [1, 2, 3]
+  }
+}

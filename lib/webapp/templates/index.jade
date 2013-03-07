@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  if (config.title)
+   h2=config.title
+  if (config.description)
+   p=config.description 
+  != page.html
+  if (stats)
+   ul
+    li Total Volume: 
+     =JSON.stringify(stats.volume)
+    li Range Start: 
+     =stats.first.toString()
+    li Range End: 
+     =stats.last.toString()
+    if(config.share_csdl_link)
+     li CSDL Filter: 
+      a(href= config.share_csdl_link, target='_blank')= config.share_csdl_link

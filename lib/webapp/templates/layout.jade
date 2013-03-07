@@ -1,0 +1,36 @@
+!!! 5
+html
+  head
+   title locals.title
+   meta(content='IE=edge,chrome=1', http-equiv='X-UA-Compatible')
+   meta(name='viewport', content='width=device-width, initial-scale=1.0')
+   meta(name='description', content='')
+   meta(name='author', content='')
+   link(rel='stylesheet', type='text/css', href='lib/bootstrap/css/bootstrap.css')
+   link(rel='stylesheet', href='lib/font-awesome/css/font-awesome.css')
+   link(rel='stylesheet', type='text/css', href='stylesheets/theme.css')
+   link(rel='shortcut icon', href='../assets/ico/favicon.ico')
+   link(rel='apple-touch-icon-precomposed', sizes='144x144', href='../assets/ico/apple-touch-icon-144-precomposed.png')
+   link(rel='apple-touch-icon-precomposed', sizes='114x114', href='../assets/ico/apple-touch-icon-114-precomposed.png')
+   link(rel='apple-touch-icon-precomposed', sizes='72x72', href='../assets/ico/apple-touch-icon-72-precomposed.png')
+   link(rel='apple-touch-icon-precomposed', href='../assets/ico/apple-touch-icon-57-precomposed.png')
+  body
+     .navbar
+       .navbar-inner
+          img(src='images/logo.png')       
+      #sidebar-nav
+        include nav
+      .content
+        .container-fluid
+          .row-fluid
+            .faq-content
+              .row-fluid
+                .span12
+                  block content
+            footer
+              hr
+              p
+                | © 2013
+                a(href='http://datasift.com')  DataSift Inc.
+      script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+     script(src='javascripts/site.js')
