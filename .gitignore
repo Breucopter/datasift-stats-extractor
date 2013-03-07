@@ -1,0 +1,5 @@
+node_modules/
+*.csv
+*.html
+.ds_store
+.DS_STORE

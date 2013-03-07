@@ -2,10 +2,21 @@ extends layout
 
 block content
   != page.html
-  ul
-   each val, key in tags
-    if(typeof(val) === 'number')
-     li #{key} -  #{val}  
+  table.table.table-first-column-number
+    thead
+        tr
+          th(style='padding-left: 1em;') #
+          th Tag
+          th Volume
+      tbody
+        - var i = 0;
+        each val, key in tags
+         if(typeof(val) === 'number')
+          - i++;
+          tr
+           td #{i}
+           td #{key}
+           td #{val}
   #pie
   #display  
   script(src='lib/d3/d3.v3.min.js')
