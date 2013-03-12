@@ -5,7 +5,7 @@ var links =
       { title: 'Money Land: A James Pruett Mystery (Volume 2): R.S. Guthrie Russell Rowland Ares Jun: Amazon.com: Kindle Store',
         count: 8 },
      'http://www.sooperarticles.com/real-estate-articles/property-investment-articles/how-bring-real-estate-investment-success-closer-1150828.html': 
-      { title: 'How to Bring Real Estate Investment Success Closer?',
+      { title: 'to Bring Real Estate Investment Success Closer?',
         count: 1 },
      'http://commercialprojectconsulting.com/quick-tips-for-those-investing-in-commercial-real-estate-2': 
       { title: 'Quick Tips For Those Investing In Commercial Real Estate - Commercial Project Consulting.com | Commercial Project Consulting.com',
@@ -60,34 +60,62 @@ var links =
    } 
 };
 
+var domains = 
+{ domain: 
+   { 'amazon.com': 15,
+     'sooperarticles.com': 1,
+     'commercialprojectconsulting.com': 2,
+     'earticlesonline.com': 5,
+     'youtube.com': 20,
+     'realestatemogul.com': 5,
+     'engadget.com': 2,
+     'realestate.aol.com': 28,
+     'cpustocks.com': 1,
+     'soc.li': 1,
+     'wnd.com': 2,
+     'tinyurl.com': 2,
+     'officefinder.com': 1,
+     'orange-county-real-estate.go2wendy.com': 1,
+     'governmentauctionblog.com': 1,
+     'buyhomesindetroit.com': 1 
+   } 
+};
+
+orderObject(domains.domain)
 
 
-orderObjectSelect(links.url)
 
-
-function orderObjectSelect(object) {
+/*
+ * orderObject - order an object by a specified property
+ * 
+ * @param - object - the object to re-order e.g.. links.url
+ * @param - string - the property to order by e.g. 'count' for links.url.count
+ * @return object
+ * 
+ */
+function orderObject(object, keyName) {
 
 	var sortable = [];
 	var returnObj = {}
 
-	for (var index in object) {
-		sortable.push([index, object[index].count])
-	}
+	Object.keys(object).forEach(function(key){
+		sortable.push({key: key, value: object[key]});
+	});
 
 	sortable.sort(function(a, b) {
-		return b[1] - a[1]
-	})
+		if ( isNaN(a.value[keyName])&&isNaN(b.value[keyName])) return a.value[keyName]<b.value[keyName]?-1:a.value[keyName]==b.value[keyName]?0:1; // both are string
+        else if (isNaN(a.value[keyName])) return 1; // only a is a string
+        else if (isNaN(b.value[keyName])) return -1; // only b is a string
+        else return b.value[keyName] - a.value[keyName]; // both are num
+	});
+
+	sortable.forEach(function(item){
+		returnObj[item.key] = item.value;
+	});
 	
+	console.log(returnObj);
 	
-	
-	//console.log(JSON.stringify(sortable));
-	
-	for (var y = 0; y < sortable.length; y++) {
-		console.log(sortable[y][0]);
-		returnObj[sortable[y][0]] = object[sortable[y][0]];
-	}
-console.log(returnObj);
-	//returnObj[sortable[y][0]] = sortable[y][1];
+	return returnObj;
 
 }
 
