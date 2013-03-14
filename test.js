@@ -14,7 +14,7 @@ var links =
       { title: '', 
         count: 1 },
      'http://www.governmentauction.com/about-us/contact-us/': 
-      { title: 'Cheap Land for Sale – Land for Auction – GovernmentAuction.com',
+      { title: 'How to Buy Land at Government Auction?', 
         count: 1 },
      'http://realestate.aol.com/blog/2013/01/17/hottest-neighborhoods-2013/': 
       { title: 'Hottest Neighborhoods 2013: Places Expected to Lead the Pack This Year | AOL Real Estate',
@@ -81,9 +81,24 @@ var domains =
    } 
 };
 
+
+var domains2 = 
+{ domain: 
+   { 'amazon.com': 'Looking for CashFlow and High ROI - Check out Detroit Investment Properties! | Buy Homes In Detroit | Detroit Real Estate',
+     'sooperarticles.com': 'How to Buy Land at Government Auction?', 
+     'commercialprojectconsulting.com': 'How to Buy Land at Government Auction?', 
+     'earticlesonline.com': 'mary', 
+     'youtube.com': 'lamb',
+     '123youtube.com': 'abc lamb', 
+     'you133tube.com': 'def lamb',  
+     'realestatemogul.com': 'little'
+   } 
+};
+//orderObject(domains.domain)
+
+//orderObject(links.url, 'title')
+
 orderObject(domains.domain)
-
-
 
 /*
  * orderObject - order an object by a specified property
@@ -99,14 +114,28 @@ function orderObject(object, keyName) {
 	var returnObj = {}
 
 	Object.keys(object).forEach(function(key){
+		//console.log('Pushing key: ' + key + '  value: ' + object[key]);
 		sortable.push({key: key, value: object[key]});
 	});
 
 	sortable.sort(function(a, b) {
-		if ( isNaN(a.value[keyName])&&isNaN(b.value[keyName])) return a.value[keyName]<b.value[keyName]?-1:a.value[keyName]==b.value[keyName]?0:1; // both are string
-        else if (isNaN(a.value[keyName])) return 1; // only a is a string
-        else if (isNaN(b.value[keyName])) return -1; // only b is a string
-        else return b.value[keyName] - a.value[keyName]; // both are num
+		
+		// No count field supplied so use the index value itself
+		if(typeof(keyName) === 'undefined' || typeof(keyName) === undefined ){
+		
+			if ( isNaN(a.value)&&isNaN(b.value)) return a.value<b.value?-1:a.value==b.value?0:1; // both are string
+	        else if (isNaN(a.value)) return 1; // only a is a string
+	        else if (isNaN(b.value)) return -1; // only b is a string
+	        else return b.value - a.value; // both are num
+
+		} else { // Count field supplied
+		
+			if ( isNaN(a.value[keyName])&&isNaN(b.value[keyName])) return a.value[keyName]<b.value[keyName]?-1:a.value[keyName]==b.value[keyName]?0:1; // both are string
+	        else if (isNaN(a.value[keyName])) return 1; // only a is a string
+	        else if (isNaN(b.value[keyName])) return -1; // only b is a string
+	        else return b.value[keyName] - a.value[keyName]; // both are num
+       }
+        
 	});
 
 	sortable.forEach(function(item){
@@ -116,7 +145,6 @@ function orderObject(object, keyName) {
 	console.log(returnObj);
 	
 	return returnObj;
-
 }
 
 
