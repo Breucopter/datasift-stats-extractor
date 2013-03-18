@@ -21,6 +21,7 @@ global.tags				= {};
 global.geo				= [];
 global.demographics		= {};
 global.config			= filehandler.loadConfig();
+global.words			= {};
 
 console.log('Extracting data from ' + file);
 
