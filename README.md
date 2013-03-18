@@ -17,7 +17,10 @@ The script will generate a static web application including the aggregate data f
 * geo_latitude_longitude.csv
 * url_volume.csv
 * domain_volume.csv
-* salience_entity_locations.csv
+* sentiment_by_day.csv - Average sentiment value calculated for each day of the coverage period
+* sentiment_by_hour.csv - Average sentiment value calculated for each hour of the coverage period
+* sentiment_by_minute.csv - Average sentiment value calculated for each minute of the coverage period
+* salience_entity_locations.csv - Locations mentioned within the content
 * salience_topics.csv
 * influencers_retweet.csv
 * demographics_gender.csv
