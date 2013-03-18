@@ -43,7 +43,7 @@ The script will generate a static web application including the aggregate data f
 
 Edit ```config.json``` and complete the required properties. Leave the properties blank for them to be ignored.
 
-* **Title**: Optional text shown on the index.html landing page. Useful for context for a specific prospect.
+* **Title**: Optional text shown on the index.html landing page. Useful for context for setting context of the export data e.g. an event.
 * **Description**: As above.
 * **accessKeyId**: S3 Access Key ID
 * **secretAccessKey**: S3 Access Key
