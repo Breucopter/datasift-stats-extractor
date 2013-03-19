@@ -7,29 +7,30 @@ The script will generate a static web application including the aggregate data f
 
 ## Supported Extractors
 
-* volume_by_day.csv
-* volume_by_hour.csv
-* volume_by_minute.csv
-* hashtag_volume.csv
-* tag_volume.csv
-* tag_volume_by_day.csv
-* tag_volume_by_hour.csv
-* geo_latitude_longitude.csv
-* url_volume.csv
+* demographics_age_ranges.csv
+* demographics_gender.csv
+* demographics_large_accounts_categories.csv
+* demographics_large_accounts.csv
+* demographics_likes_and_interests.csv
+* demographics_twitter_activity.csv
 * domain_volume.csv
+* geo_latitude_longitude.csv
+* hashtag_volume.csv
+* influencers_retweet.csv
+* language_volume.csv - An aggregate count of each language tag
+* salience_entity_locations.csv - Locations mentioned within the content
+* salience_topics.csv
 * sentiment_by_day.csv - Average sentiment value calculated for each day of the coverage period
 * sentiment_by_hour.csv - Average sentiment value calculated for each hour of the coverage period
 * sentiment_by_minute.csv - Average sentiment value calculated for each minute of the coverage period
-* salience_entity_locations.csv - Locations mentioned within the content
-* salience_topics.csv
-* influencers_retweet.csv
-* demographics_gender.csv
-* demographics_age_ranges.csv
-* demographics_large_accounts.csv
-* demographics_large_accounts_categories.csv
-* demographics_likes_and_interests.csv
-* demographics_twitter_activity.csv
-* stats - Total Volume, start end dates
+* stats - Total Volume, start end dates, demographic profiles collected
+* tag_volume_by_day.csv
+* tag_volume_by_hour.csv
+* tag_volume.csv
+* url_volume.csv
+* volume_by_day.csv
+* volume_by_hour.csv
+* volume_by_minute.csv
 
 ## Install
 
