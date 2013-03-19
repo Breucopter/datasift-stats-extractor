@@ -23,6 +23,7 @@ global.demographics		= {};
 global.config			= filehandler.loadConfig();
 global.words			= {};
 global.language			= {};
+global.interaction		= {};
 
 console.log('Extracting data from ' + file);
 
