@@ -4,20 +4,20 @@ block content
   != page.html
   .well
     h1 Salience
-    if ((salience.sentiment.daydata && Object.keys( salience.sentiment.daydata ).length !== 0) || (salience.sentiment.hourdate && Object.keys( salience.sentiment.hourdate ).length !== 0) || (salience.sentiment.minutedata && Object.keys( salience.sentiment.minutedata ).length !== 0)) 
+    if ((salience.sentiment && salience.sentiment.daydata && Object.keys( salience.sentiment.daydata ).length !== 0) || (salience.sentiment && salience.sentiment.hourdate && Object.keys( salience.sentiment.hourdate ).length !== 0) || (salience.sentiment && salience.sentiment.minutedata && Object.keys( salience.sentiment.minutedata ).length !== 0)) 
       h2 Salience Sentiment
       p
         | The sentiment score is derived using the Salience engine, delivering a score between -20 and +20. A negative value indicates a negative sentiment, zero representing a nuetral sentiment and a positive value indicates a positive sentiment.
       
-      if (salience.sentiment.daydata && Object.keys( salience.sentiment.daydata ).length !== 0)
+      if (salience.sentiment && salience.sentiment.daydata && Object.keys( salience.sentiment.daydata ).length !== 0)
        h3 Average by Day
        p
          a.btn.btn-primary(href='data/sentiment_by_day.csv') Download
-      if (salience.sentiment.hourdata && Object.keys( salience.sentiment.hourdata ).length !== 0)
+      if (salience.sentiment && salience.sentiment.hourdata && Object.keys( salience.sentiment.hourdata ).length !== 0)
        h3 Average by Hour
        p
          a.btn.btn-primary(href='data/sentiment_by_hour.csv') Download
-      if (salience.sentiment.minutedata && Object.keys( salience.sentiment.minutedata ).length !== 0)
+      if (salience.sentiment && salience.sentiment.minutedata && Object.keys( salience.sentiment.minutedata ).length !== 0)
        h3 Average by Minute
        p
          a.btn.btn-primary(href='data/sentiment_by_minute.csv') Download               
