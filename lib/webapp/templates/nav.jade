@@ -57,16 +57,16 @@ ul#dashboard-menu.nav.nav-list
         span Links
 
   if (Object.keys( hashtags ).length !== 0)
-   - if (locals.page._filename === 'hashtags.md') 
+   - if (locals.page._filename === 'content.md') 
       li.active
-       a(href='hashtags.html')
+       a(href='content.html')
         i.icon-comments-alt
-        span Twitter Hashtags
+        span Content
    - else  
       li
-       a(href='hashtags.html')
+       a(href='content.html')
         i.icon-comments-alt
-        span Twitter Hashtags
+        span Content
         
   if (Object.keys( geo ).length !== 0)
    - if (locals.page._filename === 'geo.md') 
