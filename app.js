@@ -24,6 +24,7 @@ global.config			= filehandler.loadConfig();
 global.language			= {};
 global.interaction		= {};
 
+
 console.log('Extracting data from ' + file);
 
 stream.on('data', function(line) {
