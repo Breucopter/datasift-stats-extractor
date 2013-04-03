@@ -23,6 +23,7 @@ global.demographics		= {};
 global.config			= filehandler.loadConfig();
 global.language			= {};
 global.interaction		= {};
+global.twitter			= {};
 
 
 console.log('Extracting data from ' + file);
