@@ -27,6 +27,8 @@ The script will generate a static web application including the aggregate data f
 * tag_volume_by_day.csv
 * tag_volume_by_hour.csv
 * tag_volume.csv
+* tag_twitter_userid.csv - a list twitter user id's for each tag
+* twitter_user_ids.csv - all user id's for Twitter authors
 * url_volume.csv
 * volume_by_day.csv
 * volume_by_hour.csv
