@@ -1,26 +1,38 @@
-var vows = require('vows'),
-    assert = require('assert')
+var vows 	= require('vows'),
+    assert 	= require('assert'),
+    utils 	= require('../lib/util/utils')
     ;
 
-// Tests are added to suites in batches.
-vows.describe('Utils').addBatch({                      // Batch
-    'An array': {                                      // Context
-        'with 3 elements': {                           // Sub-Context
-            topic: [1, 2, 3],                          // Topic
-
-            'has a length of 3': function (topic) {    // Vow
-                assert.equal(topic.length, 3);
-            }
+vows.describe('Utility Functions').addBatch({
+    'When creating a tag dir with no name': {
+        topic: function () {
+        	return utils.createTagDir(); 
         },
-        'with zero elements': {                        // Sub-Context
-            topic: [],                                 // Topic
 
-            'has a length of 0': function (topic) {    // Vow
-                assert.equal(topic.length, 0);
-            },
-            'returns *undefined*, when `pop()`ed': function (topic) {
-                assert.isUndefined(topic.pop());
-            }
+        'we get false': function (topic) {
+           assert.isFalse (topic);
+        }
+    },
+    
+    'When creating a tag dir with an empty name': {
+        topic: function () {
+        	return utils.createTagDir(''); 
+        },
+
+        'we get false': function (topic) {
+           assert.isFalse (topic);
+        }
+    },
+    
+     'When creating a tag dir with a valid name': {
+        topic: function () {
+        	return utils.createTagDir('foo'); 
+        },
+
+        'we get true': function (topic) {
+           assert.isTrue (topic);
         }
     }
-}).run();
+    
+}).export(module); // Export the Suite
+
