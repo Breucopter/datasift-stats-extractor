@@ -24,6 +24,9 @@ The script will generate a static web application including the aggregate data f
 * sentiment_by_hour.csv - Average sentiment value calculated for each hour of the coverage period
 * sentiment_by_minute.csv - Average sentiment value calculated for each minute of the coverage period
 * stats - Total Volume, start end dates, demographic profiles collected
+* tag_sentiment_by_day.csv - Average sentiment value calculated for each tag by day
+* tag_sentiment_by_hour.csv - Average sentiment value calculated for each tag by hour
+* tag_sentiment_by_minute.csv - Average sentiment value calculated for each tag by minute
 * tag_volume_by_day.csv
 * tag_volume_by_hour.csv
 * tag_volume.csv
