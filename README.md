@@ -18,7 +18,8 @@ The script will generate a static web application including the aggregate data f
 * hashtag_volume.csv
 * influencers_retweet.csv
 * language_volume.csv - An aggregate count of each language tag
-* salience_entity_locations.csv - Locations mentioned within the content
+* salience_entity_locations.csv - Entities of type "Place"
+* salience_entity_quotes.csv - Entities of type "Quote"
 * salience_topics.csv
 * sentiment_by_day.csv - Average sentiment value calculated for each day of the coverage period
 * sentiment_by_hour.csv - Average sentiment value calculated for each hour of the coverage period
