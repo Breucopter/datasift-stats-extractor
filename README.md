@@ -7,6 +7,8 @@ The script will generate a static web application including the aggregate data f
 
 ## Supported Extractors
 
+* content_hashtag_volume.csv - all hash tags aggregated by volume.
+* content_words_volume.csv - all words aggregated by volume, with stop words removed
 * demographics_age_ranges.csv
 * demographics_gender.csv
 * demographics_large_accounts_categories.csv
@@ -15,7 +17,6 @@ The script will generate a static web application including the aggregate data f
 * demographics_twitter_activity.csv
 * domain_volume.csv
 * geo_latitude_longitude.csv
-* hashtag_volume.csv
 * influencers_retweet.csv
 * language_volume.csv - An aggregate count of each language tag
 * salience_entity_locations.csv - Entities of type "Place"
