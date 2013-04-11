@@ -7,8 +7,6 @@ var fs = require('fs')
 	, file = filehandler.getSourceFile()
 	;
 
-    var AdmZip = require('adm-zip');
-
 var stream = fs.createReadStream(file);
 	stream = byline.createStream(stream);
 
@@ -39,12 +37,4 @@ stream.on('end', function() {
   dataexport.dumpFiles();
   console.log('Exporting webapp...'); 
   publish.render();
-  
-  
-  
-  var zip = new AdmZip();
-    zip.addLocalFile('s3.js');
-    zip.addLocalFile('package.json');
-    zip.writeZip("./output/data/source.zip");
-  
 });

@@ -13,6 +13,7 @@
     "underscore" : "1.4.4",
     "async" : "0.2.5",
     "vows" : "0.7.0",
-    "assert" : "0.4.9"
+    "assert" : "0.4.9",
+    "adm-zip" : "0.4.3"
   }
 }
