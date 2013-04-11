@@ -9,7 +9,7 @@ The script will generate a static web application including the aggregate data f
 
 * content_hashtag_volume.csv - all hash tags aggregated by volume.
 * content_words_volume.csv - all words aggregated by volume, with stop words removed
-* demographics_age_ranges.csv
+* demographics_age_ranges.csv - range, volume and a percentage of the total number of age range interactions processed.
 * demographics_gender.csv - gender, volume and a percentage of the total number of gender interactions processed.
 * demographics_large_accounts_categories.csv
 * demographics_large_accounts.csv
