@@ -84,7 +84,7 @@ s3.CreateBucket(params, function(err, data) {
 // --------------------------------------------------------------------------------------------------------------------
 
 uploadItemQueue.drain = function() { // Emitted after a write() method was called that returned false to indicate that it is safe to write again.
-  	
+	
   s3.PutBucketWebsite(params, function(err, data) {
 	  if (err) {
 	  	console.log(err);
@@ -93,7 +93,7 @@ uploadItemQueue.drain = function() { // Emitted after a write() method was calle
 		  
 		console.log('Bucket website created.')  
 	});
-	
+/*
 	s3.PutBucketPolicy(params, function(err, data) {
 		if (err) {
 	        console.log(err);
@@ -108,10 +108,10 @@ uploadItemQueue.drain = function() { // Emitted after a write() method was calle
 	        return;
 	    }
 		console.log('Bucket lifecycle applied.') 
-		console.log('Created https\://s3.amazonaws.com/' + params.BucketName + '/index.html');
+		console.log('Created https\://s3.amazonaws.com/' + bucket + '/index.html');
 		console.log('Done.');
 	});
-	
+*/
 
 };
 
@@ -149,7 +149,8 @@ function uploadItem(item, callback) {
         ContentType 	: mime.lookup(item.filename)
     };
 		
-		console.log('Uploading ', item.filename + ' (' + item.size + ')');
+	console.log('Uploading ', item.filename + ' (' + item.size + ')');
+    
     s3.PutObject(options, function(err, data) {
         if (err) {
              console.log('UploadFailed', item.filename);

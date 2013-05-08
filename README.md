@@ -34,6 +34,9 @@ The script will generate a static web application including the aggregate data f
 * tag_volume.csv
 * tag_twitter_userid.csv - a list twitter user id's for each tag
 * twitter_user_ids.csv - all user id's for Twitter authors
+* type_volume_by_day.csv - If more than 1 data type has been found e.g. twitter and facebook, volume plotted by type and day.
+* type_volume_by_hour.csv - See type_volume_by_day.csv.
+* type_volume_by_minute.csv - See type_volume_by_day.csv.
 * url_volume.csv
 * volume_by_day.csv
 * volume_by_hour.csv
