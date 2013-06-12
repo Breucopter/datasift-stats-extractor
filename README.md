@@ -17,7 +17,7 @@ The script will generate a static web application including the aggregate data f
 * demographics_twitter_activity.csv
 * domain_volume.csv
 * geo_latitude_longitude.csv
-* influencers_retweet.csv - Aggregate unique combinations of retweet and retweeted users - counts = 1 are dropped by default.
+* influencers_retweeted.csv - Aggregate unique combinations of retweet and retweeted users - counts = 1 are dropped by default.
 * language_volume.csv - An aggregate count of each language tag
 * salience_entity_locations.csv - Entities of type "Place"
 * salience_entity_quotes.csv - Entities of type "Quote"
