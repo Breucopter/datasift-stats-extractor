@@ -1,93 +1,25 @@
-ul#dashboard-menu.nav.nav-list
-  - if (locals.page._filename === 'index.md') 
-     li.active
-      a(href='index.html')
-       i.icon-globe
-       span Summary     
-  - else  
-     li
-      a(href='index.html')
-       i.icon-globe
-       span Summary
-  - if (locals.page._filename === 'volume.md') 
-     li.active
-      a(href='volume.html')
-       i.icon-bar-chart
-       span Interaction Volume    
-  - else  
-     li
-      a(href='volume.html')
-       i.icon-bar-chart
-       span Interaction Volume
-       
-  if (Object.keys( salience ).length !== 0)
-   - if (locals.page._filename === 'salience.md') 
-      li.active
-       a(href='salience.html')
-        i.icon-magic
-        span Salience
-   - else  
-      li
-       a(href='salience.html')
-        i.icon-magic
-        span Salience
-
-  if (Object.keys( tags ).length !== 0)
-   - if (locals.page._filename === 'tags.md') 
-      li.active
-       a(href='tags.html')
-        i.icon-tags
-        span Tags
-   - else  
-      li
-       a(href='tags.html')
-        i.icon-tags
-        span Tags
-
-  if (Object.keys( links ).length !== 0)
-   - if (locals.page._filename === 'links.md') 
-      li.active
-       a(href='links.html')
-        i.icon-external-link
-        span Links
-   - else  
-      li
-       a(href='links.html')
-        i.icon-external-link
-        span Links
-
-  if (Object.keys( hashtags ).length !== 0)
-   - if (locals.page._filename === 'content.md') 
-      li.active
-       a(href='content.html')
-        i.icon-comments-alt
-        span Content
-   - else  
-      li
-       a(href='content.html')
-        i.icon-comments-alt
-        span Content
-        
-  if (Object.keys( geo ).length !== 0)
-   - if (locals.page._filename === 'geo.md') 
-      li.active
-       a(href='geo.html')
-        i.icon-map-marker
-        span Geo
-   - else  
-      li
-       a(href='geo.html')
-        i.icon-map-marker
-        span Geo
-        
-  if (Object.keys( demographics ).length !== 0)
-   - if (locals.page._filename === 'demographics.md') 
-      li.active
-       a(href='demographics.html')
-        i.icon-user-md
-        span Demographics
-   - else  
-      li
-       a(href='demographics.html')
-        i.icon-user-md
-        span Demographics
+.navbar
+  .navbar-inner
+    .container
+      ul.nav
+       - if (locals.page._filename === 'index.md') 
+          li.active
+           a(href='index.html') Home
+       - else
+          li
+           a(href='index.html') Home
+       <!--
+       - if (locals.page._filename === 'volume.md')      
+          li.active
+           a(href='volume.html') Volume
+       - else
+          li
+           a(href='volume.html') Volume
+  
+       if (Object.keys( hashtags ).length !== 0)
+        - if (locals.page._filename === 'content.md') 
+          li.active
+           a(href='content.html') Content
+        - else
+          li
+           a(href='content.html') Content-->

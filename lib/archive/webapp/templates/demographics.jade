@@ -1,0 +1,48 @@
+extends layout
+
+block content
+  != page.html
+  .well
+    h1 Demographics
+    if ( demographics.age_range && Object.keys( demographics.age_range ).length !== 0) 
+      h2 Age Ranges
+      p
+        | 6 and under, 17-19, 20-24...65-69, etc.
+      p
+        a.btn.btn-primary(href='data/demographics_age_ranges.csv') Download
+      br
+    if ( demographics.gender && Object.keys( demographics.gender ).length !== 0) 
+      h2 Gender
+      p
+        | Aggregate volumes of male, female.
+      p
+        a.btn.btn-primary(href='data/demographics_gender.csv') Download
+      br
+    if ( demographics.large_accounts && Object.keys( demographics.large_accounts ).length !== 0) 
+      h2 Twitter Large Accounts
+      p
+        | Twitter accounts followed that are significant in their follower count size e.g. Lady Gaga, Eminem, TwitPic, CNN News, etc.
+      p
+        a.btn.btn-primary(href='data/demographics_large_accounts.csv') Download
+      br
+    if ( demographics.large_accounts_categories && Object.keys( demographics.large_accounts ).length !== 0) 
+      h2 Twitter Large Account Categories
+      p
+        | Categories for Twitter accounts followed that are significant in their follower count size e.g. actors, musicians, TV celebrities, comedians, news, tech brands, etc.
+      p
+        a.btn.btn-primary(href='data/demographics_large_accounts.csv') Download
+      br
+    if ( demographics.likes_interests && Object.keys( demographics.likes_interests ).length !== 0) 
+      h2 Likes and Interests
+      p
+        | Likes and interests - music, fashion, news, sports, etc.
+      p
+        a.btn.btn-primary(href='data/demographics_likes_and_interests.csv') Download
+      br
+    if ( demographics.twitter_activity && Object.keys( demographics.twitter_activity ).length !== 0) 
+      h2 Twitter Activity
+      p
+        | Frequency of twitter activity
+      p
+        a.btn.btn-primary(href='data/demographics_twitter_activity.csv') Download
+      br      

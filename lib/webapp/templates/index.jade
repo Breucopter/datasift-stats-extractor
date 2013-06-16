@@ -1,13 +1,20 @@
 extends layout
 
 block content
-  if (config.title)
-   h2=config.title
-  if (config.description)
-   p=config.description
-  else
-   h2 DataSift Sample Data 
-  != page.html
+ //Jumbotron
+ .jumbotron
+  p.lead
+   | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+   a.btn.btn-success(href='all_csv_files.zip') Download CSV Data
+
+  //if (config.title)
+  // h2=config.title
+  //if (config.description)
+   //p=config.description
+  //else
+  // h2 DataSift Sample Data 
+  //!= page.html
+  /*
   if (stats)
    ul
     li Total Volume: 
@@ -18,11 +25,7 @@ block content
      =stats.last.toString()
     if(config.share_csdl_link)
      li CSDL Filter: 
-      a(href= config.share_csdl_link, target='_blank')= config.share_csdl_link
-      
-   .well
-      h1 All CSV Data
-      p
-        | Download all aggregated CSV data.
-      p
-        a.btn.btn-primary(href='all_csv_files.zip') Download      
+      a(href= config.share_csdl_link, target='_blank')= config.share_csdl_link */
+
+        
+              

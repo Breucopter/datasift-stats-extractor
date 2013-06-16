@@ -1,0 +1,5 @@
+---
+template: content.jade
+----
+
+## Content

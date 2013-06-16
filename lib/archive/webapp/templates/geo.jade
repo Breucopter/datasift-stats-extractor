@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  != page.html
+  .well
+    h1 GEO
+    h2 Longitude and Latitude
+    p
+      | Longitude and Latitude data. For interactions containing Geo data, the Longitude and Latitude data can be used for plotting location information.
+    p
+      a.btn.btn-primary(href='data/geo_latitude_longitude.csv') Download
