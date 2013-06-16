@@ -3,10 +3,12 @@ DataSift Stats Extractor
 
 Utility script to aggregate data points from a DataSift JSON file.
 
+See http://www.benh.co.uk/datasift/extracting-insight-from-datasift-data/ for use cases an examples.
+
 This utility has 3 main functions:
   - Extract specific data points and build a set of CSV files for simple insight and analysis
-  - Generate a static web application providing basic insight and the ability to download the extracted CSV data - WORK IN PROGRESS
-  - Upload the web application to S3 making it easily accessible remotely - WORK IN PROGRESS
+  - Generate a static web application providing basic insight and the ability to download the extracted CSV data - <strong>WORK IN PROGRESS</strong>
+  - Upload the web application to S3 making it easily accessible remotely - <strong>WORK IN PROGRESS</strong>
 
 ## Supported Extractors
 
