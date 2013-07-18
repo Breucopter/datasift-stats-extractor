@@ -88,3 +88,10 @@ Edit ```config.json``` and complete the required properties. Leave the propertie
 ```node s3.js```
  
 The upload script will generate a random URL bucket name, configure it as a static web server, upload the data, apply public permission and a retention policy.
+
+
+**Large Files**
+
+When processing large files (several Gb in size), the processor may hang if V8 runs out of memory. To epand the available memory, run with the 'max-old-space-size' option:
+
+```node -max-old-space-size=4096 app.js```

@@ -5,7 +5,7 @@
   , "dependencies": {
     "byline" : "2.0.3",
     "node-uuid": "1.4.x",
-    "awssum": "0.12.2",
+    "awssum-amazon-s3": "latest",
     "walk" : "2.2.1",
     "mime" : "1.2.9",
     "wintersmith" : "1.2.2",
