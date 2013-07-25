@@ -29,7 +29,9 @@ global.interaction		= {};
 global.twitter			= {};
 
 
-console.log('Extracting data from ' + file);
+console.log('');
+console.log('Extracting data from: ' + file);
+console.log('');
 
 stream.on('data', function(line) {
   process.stdout.write("Extracting interactions: " + ++counter + " \r");  
