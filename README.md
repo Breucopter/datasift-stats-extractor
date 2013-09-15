@@ -43,6 +43,7 @@ This utility has 3 main functions:
 * type_volume_by_day.csv - If more than 1 data type has been found e.g. twitter and facebook, volume plotted by type and day.
 * type_volume_by_hour.csv - See type_volume_by_day.csv.
 * type_volume_by_minute.csv - See type_volume_by_day.csv.
+* type_summary.csv - Total volumes and percentages of each data type e.g. Facebook, Twitter etc.
 * url_volume.csv
 * volume_by_day.csv
 * volume_by_hour.csv
