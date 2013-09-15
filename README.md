@@ -22,8 +22,6 @@ This utility has 3 main functions:
 * demographics_twitter_activity.csv
 * domain_volume.csv
 * geo_latitude_longitude.csv
-* influencers_retweeted.csv - Aggregate unique combinations of retweet and retweeted users - counts = 1 are dropped by default.
-* influencers_example_model.csv - Example stats to be used to derive a basic influencer model - followers count, retweet count, replies count and mentions count.
 * language_volume.csv - An aggregate count of each language tag
 * salience_entity_locations.csv - Entities of type "Place"
 * salience_entity_quotes.csv - Entities of type "Quote"
@@ -39,6 +37,8 @@ This utility has 3 main functions:
 * tag_volume_by_hour.csv
 * tag_volume.csv
 * tag_twitter_userid.csv - a list twitter user id's for each tag
+* twitter_influencers_retweeted.csv - Aggregate unique combinations of retweet and retweeted users - counts = 1 are dropped by default.
+* twitter_influencers_example_model.csv - Example stats to be used to derive a basic influencer model - followers count, retweet count, replies count and mentions count.
 * twitter_user_ids.csv - all user id's for Twitter authors
 * type_volume_by_day.csv - If more than 1 data type has been found e.g. twitter and facebook, volume plotted by type and day.
 * type_volume_by_hour.csv - See type_volume_by_day.csv.
