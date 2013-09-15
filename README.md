@@ -20,9 +20,10 @@ This utility has 3 main functions:
 * demographics_large_accounts.csv
 * demographics_likes_and_interests.csv
 * demographics_twitter_activity.csv
-* domain_volume.csv
 * geo_latitude_longitude.csv
 * language_volume.csv - An aggregate count of each language tag
+* links_domain_volume.csv
+* links_url_volume.csv
 * salience_entity_locations.csv - Entities of type "Place"
 * salience_entity_quotes.csv - Entities of type "Quote"
 * salience_topics.csv
@@ -44,7 +45,6 @@ This utility has 3 main functions:
 * type_volume_by_hour.csv - See type_volume_by_day.csv.
 * type_volume_by_minute.csv - See type_volume_by_day.csv.
 * type_summary.csv - Total volumes and percentages of each data type e.g. Facebook, Twitter etc.
-* url_volume.csv
 * volume_by_day.csv
 * volume_by_hour.csv
 * volume_by_minute.csv
