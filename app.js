@@ -27,6 +27,7 @@ global.config			= filehandler.loadConfig();
 global.language			= {};
 global.interaction		= {};
 global.twitter			= {};
+global.bitly 	= {};
 
 
 console.log('');
