@@ -43,6 +43,6 @@ stream.on('end', function() {
   console.log("\nBuilding result sets...");
   dataexport.dumpFiles();
   console.log('Exporting webapp...'); 
-  publish.render();
+  //publish.render();
 });
 
