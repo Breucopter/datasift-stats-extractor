@@ -12,22 +12,23 @@ var stream = fs.createReadStream(file);
 	stream = byline.createStream(stream);
 
 // Data Objects
-global.timestamps 		= {};
+global.timestamps 	= {};
 global.salience 		= {};
-global.stats			= {};
-global.links			= {};
+global.stats				= {};
+global.links				= {};
 global.hashtags			= {};
-global.influencers		= {};
-global.infMentions		= [];
+global.influencers	= {};
+global.infMentions	= [];
 global.infReplies		= [];
-global.tags				= {};
-global.geo				= [];
-global.demographics		= {};
-global.config			= filehandler.loadConfig();
+global.tags					= {};
+global.geo					= [];
+global.demographics	= {};
+global.config				= filehandler.loadConfig();
 global.language			= {};
-global.interaction		= {};
+global.interaction	= {};
 global.twitter			= {};
-global.bitly 	= {};
+global.bitly 				= {};
+global.facebookpage = {};
 
 
 console.log('');

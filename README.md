@@ -20,6 +20,7 @@ This utility has 3 main functions:
 * demographics_large_accounts.csv
 * demographics_likes_and_interests.csv
 * demographics_twitter_activity.csv
+* facebook_page_post_type_volume.csv - aggregate counts of each post type e.g. photo, like, status, comment.
 * geo_latitude_longitude.csv
 * language_volume.csv - An aggregate count of each language tag
 * links_domain_volume.csv
