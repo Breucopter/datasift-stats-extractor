@@ -65,7 +65,7 @@ Place a JSON file (formatted to 1 document per line) in to the /process director
 
 ```node app.js```
 
-CSV data will be generated in to the /outout/data directory.
+CSV data will be generated in to the /outout directory.
 
 
 **Large Files**
