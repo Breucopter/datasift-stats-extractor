@@ -3,17 +3,16 @@
   , "version": "0.0.1"
   , "private": true
   , "dependencies": {
-    "byline" : "2.0.3",
-    "node-uuid": "1.4.x",
-    "awssum-amazon-s3": "latest",
-    "walk" : "2.2.1",
-    "mime" : "1.2.9",
-    "wintersmith" : "1.2.2",
-    "underscore.string" : "2.3.1",
-    "underscore" : "1.4.4",
-    "async" : "0.2.5",
-    "vows" : "0.7.0",
-    "assert" : "0.4.9",
-    "adm-zip" : "0.4.3"
+	    "byline" : "2.0.3",
+	    "node-uuid": "1.4.x",
+	    "walk" : "2.2.1",
+	    "mime" : "1.2.9",
+	    "wintersmith" : "1.2.2",
+	    "underscore.string" : "2.3.1",
+	    "underscore" : "1.4.4",
+	    "async" : "0.2.5",
+	    "vows" : "0.7.0",
+	    "assert" : "0.4.9",
+	    "adm-zip" : "0.4.3"
   }
 }

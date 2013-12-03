@@ -1,14 +1,10 @@
 DataSift Stats Extractor
 ========================
 
-Utility script to aggregate data points from a DataSift JSON file.
+Utility script to aggregate data points from a DataSift JSON file and generate CSV files.
 
 See http://www.benh.co.uk/datasift/extracting-insight-from-datasift-data/ for use cases an examples.
 
-This utility has 3 main functions:
-  - Extract specific data points and build a set of CSV files for simple insight and analysis
-  - Generate a static web application providing basic insight and the ability to download the extracted CSV data - <strong>WORK IN PROGRESS</strong>
-  - Upload the web application to S3 making it easily accessible remotely - <strong>WORK IN PROGRESS</strong>
 
 ## Supported Extractors
 
@@ -69,27 +65,7 @@ Place a JSON file (formatted to 1 document per line) in to the /process director
 
 ```node app.js```
 
-The resulting web application will generated in to the /output directory, and associated CSV data in to the /outout/data directory.
-
-
-**Optional Config**
-
-The following features are only relavent when utilising the statis web application or S3 upload facility.
-
-Edit ```config.json``` and complete the required properties. Leave the properties blank for them to be ignored.
-
-* **Title**: Optional text shown on the index.html landing page. Useful for adding context around export data e.g. an event.
-* **Description**: As above.
-* **accessKeyId**: S3 Access Key ID
-* **secretAccessKey**: S3 Access Key
-* **file_delete_policy_days**: S3 retention policy - The number of days before the files are deleted.
-
-
-**Upload to S3**
-
-```node s3.js```
- 
-The upload script will generate a random URL bucket name, configure it as a static web server, upload the data, apply public permission and a retention policy.
+CSV data will be generated in to the /outout/data directory.
 
 
 **Large Files**
