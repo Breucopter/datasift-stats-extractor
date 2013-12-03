@@ -1,5 +1,0 @@
----
-template: demographics.jade
-----
-
-## Demographics

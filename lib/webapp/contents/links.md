@@ -1,5 +1,0 @@
----
-template: links.jade
-----
-
-## Links

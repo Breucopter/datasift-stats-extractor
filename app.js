@@ -2,7 +2,6 @@ var fs = require('fs')
 	, byline = require('byline')
 	, extract = require('./lib/extract')
 	, dataexport = require('./lib/dataexport')
-	, publish = require('./lib/publish')
 	, filehandler = require('./lib/util/filehandler.js')
 	, file = filehandler.getSourceFile()
 	, counter = 0
@@ -23,7 +22,6 @@ global.infReplies		= [];
 global.tags					= {};
 global.geo					= [];
 global.demographics	= {};
-global.config				= filehandler.loadConfig();
 global.language			= {};
 global.interaction	= {};
 global.twitter			= {};
@@ -43,7 +41,5 @@ stream.on('data', function(line) {
 stream.on('end', function() {
   console.log("\nBuilding result sets...");
   dataexport.dumpFiles();
-  console.log('Exporting webapp...'); 
-  //publish.render();
 });
 
