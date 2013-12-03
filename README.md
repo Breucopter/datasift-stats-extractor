@@ -16,7 +16,7 @@ See http://www.benh.co.uk/datasift/extracting-insight-from-datasift-data/ for us
 * demographics_large_accounts.csv
 * demographics_likes_and_interests.csv
 * demographics_twitter_activity.csv
-* facebook_page_post_type_volume.csv - aggregate counts of each post type e.g. photo, like, status, comment.
+* facebookpage_page_volumes.csv - aggregate counts of each page, links and a breakdown of post types e.g. photo, like, status, comment etc.
 * geo_latitude_longitude.csv
 * language_volume.csv - An aggregate count of each language tag
 * links_domain_volume.csv
