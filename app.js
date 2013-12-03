@@ -8,7 +8,7 @@ var fs = require('fs')
 	;
 
 var stream = fs.createReadStream(file);
-	stream = byline.createStream(stream);
+		stream = byline.createStream(stream);
 
 // Data Objects
 global.timestamps 	= {};
