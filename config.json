@@ -1,12 +1,12 @@
 {
   "extractor": {
-   	"content": false,
+   	"content": true,
   	"demographics": true,
     "facebook_pages": true,
     "language": true,
-    "links": false,
+    "links": true,
     "twitter": true,
-    "salience": false,
-    "tags": false
+    "salience": true,
+    "tags": true
   }
 }
