@@ -71,7 +71,7 @@ CSV data will be generated in to the `/outout` directory.
 
 **Optional Config**
 
-Extractor groups can be enabled/disabled be editing `/config.json` and setting each extractor group to `true` or `false`.
+Extractor groups can be enabled/disabled be editing `/config.json` and setting each extractor group to `true` or `false`. Disabling extractor groups will decrease processing time.
 
 
 **Large Files**
