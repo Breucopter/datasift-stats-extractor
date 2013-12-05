@@ -57,15 +57,18 @@ See http://www.benh.co.uk/datasift/extracting-insight-from-datasift-data/ for us
 
 **DataSift Source JSON File**
 
-Place a JSON file (formatted to 1 document per line) in to the /process directory. The file must be named *.json or it will be ignored.
-
+Place a JSON file (formatted to 1 document per line) in to the `/process` directory. The file must be named `*.json` or it will be ignored.
 
 
 **Run Extractor**
 
 ```node app.js```
 
-CSV data will be generated in to the /outout directory.
+CSV data will be generated in to the `/outout` directory.
+
+
+**Optional Config**
+Extractor groups can be enabled/disabled be editing `/config.json` and setting each extractor group to `true` or `false`.
 
 
 **Large Files**
