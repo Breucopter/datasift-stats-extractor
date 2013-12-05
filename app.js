@@ -36,6 +36,7 @@ global.interaction	= {};
 global.twitter			= {};
 global.bitly 				= {};
 global.facebookpage = {};
+global.augmentations = {};
 
 
 console.log('');

@@ -8,6 +8,7 @@ See http://www.benh.co.uk/datasift/extracting-insight-from-datasift-data/ for us
 
 ## Supported Extractors
 
+* augmentations_summary.csv - summary of augmentation volumes e.g. links, sentiment, topics etc
 * content_hashtag_volume.csv - all hash tags aggregated by volume
 * content_words_volume.csv - all words aggregated by volume, with stop words removed
 * demographics_age_ranges.csv - range, volume and a percentage of the total number of age range interactions processed.
