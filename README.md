@@ -48,6 +48,8 @@ See http://www.benh.co.uk/datasift/extracting-insight-from-datasift-data/ for us
 
 ## Install
 
+Install the package dependencies:
+
 ```npm install```
 
 
