@@ -54,7 +54,6 @@ Install the package dependencies:
 ```npm install```
 
 
-
 ## Usage
 
 
