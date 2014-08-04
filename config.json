@@ -1,8 +1,8 @@
 {
   "extractor": {
    	"content": true,
-  	"demographics": true,
-    "facebook_pages": true,
+  	"demographics": false,
+    "facebook_pages": false,
     "language": true,
     "links": true,
     "twitter": true,
